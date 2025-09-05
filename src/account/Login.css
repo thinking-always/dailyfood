@@ -1,0 +1,89 @@
+
+.login-fullscreen.bright {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* 🥗 음식/레시피 느낌의 따뜻한 배경 */
+  background: linear-gradient(120deg, #fff8e1 0%, #ffe0b2 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box.bright {
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+  background: #ffffffcc; /* 살짝 투명한 흰색 */
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.15); /* 주황빛 그림자 */
+  width: 380px;
+  animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ff7043; /* 따뜻한 오렌지 */
+}
+
+.login-text {
+  font-size: 1rem;
+  margin-bottom: 28px;
+  color: #6d4c41; /* 부드러운 갈색 */
+}
+
+/* 버튼 공통 */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+}
+
+.btn.wide {
+  width: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 아이콘 원형 */
+.btn-icon-circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+}
+
+/* 브랜드별 */
+.btn-google {
+  background: #4285f4;
+  color: #fff;
+}
+
+.btn-naver {
+  background: #03c75a;
+  color: #fff;
+}
+
+.btn-kakao {
+  background: #fee500;
+  color: #3a1d1d;
+}

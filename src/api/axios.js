@@ -4,6 +4,7 @@ import { API_URL } from "../config";
 
 const api = axios.create({
   baseURL: API_URL,
+  withCredentials: true, //쿠키 첨부
 });
 
 // 토큰 첨부
